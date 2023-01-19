@@ -10,9 +10,9 @@ import java.util.Objects;
 
 /*
 *
-*  Se interpreto a la clase usuario como una clase que representa a un usuario de una aplicación como
-*  podria ser facebook o instagram, claramente en estas aplicaciones un usuario no es unicamente un
-*  username y contraseña pero se simplifico a estos atributos para la facilitar el uso del sistema.
+*  Se interpretó a la clase usuario como una clase que representa a un usuario de una aplicación como
+*  podria ser facebook o instagram, claramente en estas aplicaciones un usuario no es únicamente un
+*  username y contraseña pero se simplificó a estos atributos para la facilitar el uso del sistema.
 *
 * */
 @Getter

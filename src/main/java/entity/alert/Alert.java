@@ -9,6 +9,10 @@ import lombok.ToString;
 
 import java.time.LocalDateTime;
 
+// Se separó la alerta en 2 componentes donde uno tiene una relación de composición con el otro (Alert -> AlertBody)
+// Ya que se le delega la responsabilidad de crear el cuerpo de la alerta a los temas,
+// Pero la alerta propiamente dicha la crea un objeto IAlertManager que gestiona el envío de las alertas.
+
 @Getter
 @Setter
 @ToString

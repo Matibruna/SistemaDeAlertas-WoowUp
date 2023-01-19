@@ -46,13 +46,13 @@ public class UserNotificationsListenerTest {
         AlertBody alertBody = new AlertBody("Esta es una alerta predeterminada, mira nuestras ofertas!", topic1, AlertType.INFORMATIVA, farestIssuedDate, true, expirationDateExpired);
         alert = new Alert(user, alertBody, false);
 
-        AlertBody alertBody1 = new AlertBody("Hemos visto que nos quedan pocas unidades de un producto que te interesó! Vuelve ahora y finaliza tu compra antes que se acaben.", topic1, AlertType.INFORMATIVA, recentIssuedDate,true, expirationDateNonExpired);
+        AlertBody alertBody1 = new AlertBody("¡Hemos visto que nos quedan pocas unidades de un producto que te interesó! Vuelve ahora y finaliza tu compra antes que se acaben.", topic1, AlertType.INFORMATIVA, recentIssuedDate,true, expirationDateNonExpired);
         alert1 = new Alert(user, alertBody1, false);
 
-        AlertBody alertBody2 = new AlertBody("Estos son los estrenos del ultimo mes!", topic, AlertType.INFORMATIVA, farestIssuedDate, true, expirationDateExpired);
+        AlertBody alertBody2 = new AlertBody("Estos son los estrenos del último mes!", topic, AlertType.INFORMATIVA, farestIssuedDate, true, expirationDateExpired);
         alert2 = new Alert(user, alertBody2, false);
 
-        AlertBody alertBody3 = new AlertBody("Oferta de ultimo momento!", topic, AlertType.URGENTE, recentIssuedDate);
+        AlertBody alertBody3 = new AlertBody("Oferta de último momento!", topic, AlertType.URGENTE, recentIssuedDate);
         alert3 = new Alert(user, alertBody3, false);
 
         AlertBody alertBody4 = new AlertBody("Lamentamos informar que su suscripcion a sido dada de baja debido a un inconveniente.", topic, AlertType.URGENTE, farestIssuedDate, true, expirationDateNonExpired);
@@ -132,8 +132,8 @@ public class UserNotificationsListenerTest {
         // Todas las notificaciones son:
         // AlertBody alertBody = new AlertBody("Esta es una alerta predeterminada, mira nuestras ofertas!", topic1, AlertType.INFORMATIVA, farestIssuedDate, true, expirationDateExpired);
         // AlertBody alertBody1 = new AlertBody("Hemos visto que nos quedan pocas unidades de un producto que te interesó! Vuelve ahora y finaliza tu compra antes que se acaben.", topic1, AlertType.INFORMATIVA, recentIssuedDate,true, expirationDateNonExpired);
-        // AlertBody alertBody2 = new AlertBody("Estos son los estrenos del ultimo mes!", topic, AlertType.INFORMATIVA, farestIssuedDate, true, expirationDateExpired);
-        // AlertBody alertBody3 = new AlertBody("Oferta de ultimo momento!", topic, AlertType.URGENTE, recentIssuedDate);
+        // AlertBody alertBody2 = new AlertBody("Estos son los estrenos del último mes!", topic, AlertType.INFORMATIVA, farestIssuedDate, true, expirationDateExpired);
+        // AlertBody alertBody3 = new AlertBody("Oferta de último momento!", topic, AlertType.URGENTE, recentIssuedDate);
         // AlertBody alertBody4 = new AlertBody("Lamentamos informar que su suscripcion a sido dada de baja debido a un inconveniente.", topic, AlertType.URGENTE, farestIssuedDate, true, expirationDateNonExpired);
 
         // Estas mismas deberia responder el usuario a getNotifications()
@@ -149,11 +149,11 @@ public class UserNotificationsListenerTest {
 
         // Las alertas expiradas son 2:
         // AlertBody alertBody = new AlertBody("Esta es una alerta predeterminada, mira nuestras ofertas!", topic1, AlertType.INFORMATIVA, farestIssuedDate, true, expirationDateExpired);
-        // AlertBody alertBody2 = new AlertBody("Estos son los estrenos del ultimo mes!", topic, AlertType.INFORMATIVA, farestIssuedDate, true, expirationDateExpired);
+        // AlertBody alertBody2 = new AlertBody("Estos son los estrenos del último mes!", topic, AlertType.INFORMATIVA, farestIssuedDate, true, expirationDateExpired);
 
         // Y las alertas no expiradas son 3:
         // AlertBody alertBody1 = new AlertBody("Hemos visto que nos quedan pocas unidades de un producto que te interesó! Vuelve ahora y finaliza tu compra antes que se acaben.", topic1, AlertType.INFORMATIVA, recentIssuedDate,true, expirationDateNonExpired);
-        // AlertBody alertBody3 = new AlertBody("Oferta de ultimo momento!", topic, AlertType.URGENTE, recentIssuedDate);
+        // AlertBody alertBody3 = new AlertBody("Oferta de último momento!", topic, AlertType.URGENTE, recentIssuedDate);
         // AlertBody alertBody4 = new AlertBody("Lamentamos informar que su suscripcion a sido dada de baja debido a un inconveniente.", topic, AlertType.URGENTE, farestIssuedDate, true, expirationDateNonExpired);
 
         // Estas mismas deberia responder el usuario a getNotifications()
@@ -180,7 +180,7 @@ public class UserNotificationsListenerTest {
         // De las 3 Alertas a tener en cuenta hay: 2 Urgentes y 1 Informativa
 
         // AlertBody alertBody1 = new AlertBody("Hemos visto que nos quedan pocas unidades de un producto que te interesó! Vuelve ahora y finaliza tu compra antes que se acaben.", topic1, AlertType.INFORMATIVA, recentIssuedDate,true, expirationDateNonExpired);
-        // AlertBody alertBody3 = new AlertBody("Oferta de ultimo momento!", topic, AlertType.URGENTE, recentIssuedDate);
+        // AlertBody alertBody3 = new AlertBody("Oferta de último momento!", topic, AlertType.URGENTE, recentIssuedDate);
         // AlertBody alertBody4 = new AlertBody("Lamentamos informar que su suscripcion a sido dada de baja debido a un inconveniente.", topic, AlertType.URGENTE, farestIssuedDate, true, expirationDateNonExpired);
 
         assertEquals(
@@ -200,7 +200,7 @@ public class UserNotificationsListenerTest {
         assertEquals(
                 // La lista nos devolvera las alertas no expiradas del Tema Tedx Talks, este tema envió 3 alertas de las cuales 1 expiro:
                 // Los cuerpos de estas alertas son:
-                //  AlertBody alertBody3 = new AlertBody("Oferta de ultimo momento!", topic, AlertType.URGENTE, recentIssuedDate);
+                //  AlertBody alertBody3 = new AlertBody("Oferta de último momento!", topic, AlertType.URGENTE, recentIssuedDate);
                 //  AlertBody alertBody4 = new AlertBody("Lamentamos informar que su suscripcion a sido dada de baja debido a un inconveniente.", topic, AlertType.URGENTE, farestIssuedDate, true, expirationDateNonExpired);
                 List.of(
                         alert3,
